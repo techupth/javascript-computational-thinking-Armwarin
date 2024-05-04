@@ -82,3 +82,8 @@ let orders = [
 ];
 
 // Start coding here
+
+let totalAmount = 0;
+orders.forEach(order => {
+  totalAmount += order.productPrice * order.productQuantity;
+})
